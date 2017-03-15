@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from __future__ import print_function
+from builtins import object
 import argparse
 import subprocess
 import os.path
@@ -47,7 +49,7 @@ def _main():
     options = parser.parse_args()
 
     tagger = GeniaTagger(options.tagger)
-    print tagger.parse(options.input_text)
+    print(tagger.parse(options.input_text))
     
     pass
     
